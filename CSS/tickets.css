@@ -1,0 +1,196 @@
+.main-content{
+    padding:40px;
+}
+
+.page-title{
+    font-size:50px;
+    font-weight:700;
+    color:#0f172a;
+    margin-bottom:30px;
+}
+
+/* Cards */
+
+.card{
+    background:#fff;
+    padding:40px;
+    border-radius:30px;
+    margin-bottom:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+}
+
+/* Inputs */
+
+.form-control{
+    width:100%;
+    padding:18px 20px;
+    border:1px solid #dbe2ea;
+    border-radius:18px;
+    margin-bottom:18px;
+    font-size:16px;
+    background:#fff;
+}
+
+.form-control:focus{
+    outline:none;
+    border-color:#2563eb;
+}
+
+/* Button */
+
+.btn-primary{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:16px 35px;
+    border-radius:16px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+}
+
+.btn-primary:hover{
+    background:#1d4ed8;
+}
+
+/* Statistics */
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    margin-bottom:30px;
+}
+
+.stat-card{
+    background:white;
+    padding:30px;
+    border-radius:25px;
+    box-shadow:0 8px 20px rgba(0,0,0,.05);
+}
+
+.stat-card h3{
+    color:#64748b;
+    font-size:15px;
+    margin-bottom:10px;
+}
+
+.stat-card span{
+    font-size:34px;
+    font-weight:700;
+    color:#2563eb;
+}
+
+/* Table */
+
+.table-card{
+    background:white;
+    border-radius:30px;
+    padding:40px;
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+    overflow-x:auto;
+}
+
+.ticket-table{
+    width:100%;
+    min-width:1000px;
+    border-collapse:separate;
+    border-spacing:0 15px;
+}
+
+.ticket-table th{
+    text-align:left;
+    padding:15px;
+    color:#475569;
+    font-size:15px;
+}
+
+.ticket-table td{
+    background:#fff;
+    padding:18px;
+    border-top:1px solid #edf2f7;
+    border-bottom:1px solid #edf2f7;
+}
+
+/* Column Width */
+
+.ticket-table th:nth-child(1),
+.ticket-table td:nth-child(1){
+    width:180px;
+}
+
+.ticket-table th:nth-child(2),
+.ticket-table td:nth-child(2){
+    width:280px;
+}
+
+.ticket-table th:nth-child(5),
+.ticket-table td:nth-child(5){
+    width:180px;
+}
+
+/* Badges */
+
+.badge{
+    padding:8px 16px;
+    border-radius:20px;
+    font-size:14px;
+    font-weight:600;
+}
+
+.low{
+    background:#fff4e5;
+    color:#d97706;
+}
+
+.medium{
+    background:#eff6ff;
+    color:#2563eb;
+}
+
+.high{
+    background:#fee2e2;
+    color:#dc2626;
+}
+
+.open{
+    background:#ecfdf5;
+    color:#16a34a;
+}
+
+.progress{
+    background:#dcfce7;
+    color:#15803d;
+}
+
+.closed{
+    background:#f1f5f9;
+    color:#64748b;
+}
+
+/* Delete */
+
+.delete-btn{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:15px;
+    cursor:pointer;
+}
+
+.footer{
+
+    margin-top:40px;
+
+    padding:20px;
+
+    text-align:center;
+
+    color:#666;
+
+    font-size:14px;
+
+    border-top:1px solid #ddd;
+
+}

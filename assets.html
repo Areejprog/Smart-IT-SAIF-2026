@@ -1,0 +1,165 @@
+
+assets.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assets Management</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/assets.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<aside class="sidebar">
+
+    <div>
+
+        <img src="Images/Logo.png" class="logo">
+
+        <h2 class="logo-text">Smart IT</h2>
+
+        <nav>
+
+            <a href="home.html">
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </a>
+
+            <a href="assets.html">
+                <i class="fa-solid fa-computer"></i>
+                Assets
+            </a>
+
+            <a href="tickets.html">
+                <i class="fa-solid fa-ticket"></i>
+                Tickets
+            </a>
+
+            <a href="reports.html">
+                <i class="fa-solid fa-chart-column"></i>
+                Reports
+            </a>
+
+        </nav>
+
+    </div>
+
+    <a href="index.html" class="logout-btn">
+
+        <i class="fa-solid fa-right-from-bracket"></i>
+
+        Logout
+
+    </a>
+
+</aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <div class="topbar">
+            <h1>Assets Management</h1>
+        </div>
+
+        <!-- Add Asset -->
+        <div class="form-card">
+
+            <h2>Add New Asset</h2>
+
+            <div class="form-row">
+
+                <input
+                    id="assetName"
+                    type="text"
+                    placeholder="Asset Name">
+
+                <input
+                    id="assetType"
+                    type="text"
+                    placeholder="Asset Type">
+
+                <select id="assetStatus">
+
+                    <option value="Active">
+                        Active
+                    </option>
+
+                    <option value="Maintenance">
+                        Maintenance
+                    </option>
+
+                    <option value="Out of Service">
+                        Out of Service
+                    </option>
+
+                </select>
+
+                <button
+                    type="button"
+                    onclick="addAsset()">
+
+                    Save Asset
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Search -->
+
+        <div class="table-card">
+
+            <input
+                id="searchAsset"
+                type="text"
+                placeholder="Search..."
+                onkeyup="searchAssets()">
+
+            <h2>Assets List</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Status</th>
+                        <th>Action</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="assetsTable">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+</div>
+
+<footer class="footer">
+
+    © 2026 Smart IT Asset & Ticket Management System |
+    Developed by Areej |
+    All Rights Reserved.
+
+</footer>
+
+<script src="JS/assets.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets Management</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/tickets.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<div class="layout">
+<aside class="sidebar">
+
+    <div>
+
+        <img src="Images/Logo.png" class="logo">
+
+        <h2 class="logo-text">Smart IT</h2>
+
+        <nav>
+
+            <a href="home.html">
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </a>
+
+            <a href="assets.html">
+                <i class="fa-solid fa-computer"></i>
+                Assets
+            </a>
+
+            <a href="tickets.html">
+                <i class="fa-solid fa-ticket"></i>
+                Tickets
+            </a>
+
+            <a href="reports.html">
+                <i class="fa-solid fa-chart-column"></i>
+                Reports
+            </a>
+
+        </nav>
+
+    </div>
+
+    <a href="index.html" class="logout-btn">
+
+        <i class="fa-solid fa-right-from-bracket"></i>
+
+        Logout
+
+    </a>
+
+</aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <h1 class="page-title">
+            Tickets Management
+        </h1>
+
+        <!-- Statistics -->
+
+        <div class="stats-grid">
+
+            <div class="stat-card">
+                <h3>Total Tickets</h3>
+                <span id="totalTickets">0</span>
+            </div>
+
+            <div class="stat-card">
+                <h3>Open</h3>
+                <span id="openTickets">0</span>
+            </div>
+
+            <div class="stat-card">
+                <h3>In Progress</h3>
+                <span id="progressTickets">0</span>
+            </div>
+
+            <div class="stat-card">
+                <h3>Closed</h3>
+                <span id="closedTickets">0</span>
+            </div>
+
+        </div>
+
+        <!-- Create Ticket -->
+
+        <div class="card">
+
+            <h2>Create New Ticket</h2>
+
+            <input
+                id="ticketTitle"
+                class="form-control"
+                type="text"
+                placeholder="Ticket Title">
+
+            <select
+                id="ticketPriority"
+                class="form-control">
+
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+
+            </select>
+
+            <textarea
+                id="ticketDescription"
+                class="form-control"
+                rows="5"
+                placeholder="Description"></textarea>
+
+            <button
+                class="btn-primary"
+                onclick="saveTicket()">
+
+                Create Ticket
+
+            </button>
+
+        </div>
+
+        <!-- Tickets Table -->
+
+        <div class="table-card">
+
+            <h2>Tickets List</h2>
+
+            <table class="ticket-table">
+
+                <thead>
+
+                <tr>
+
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Priority</th>
+                    <th>Status</th>
+                    <th>Date</th>
+                    <th>Action</th>
+
+                </tr>
+
+                </thead>
+
+                <tbody id="ticketsTable">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+</div>
+<footer class="footer">
+
+    © 2026 Smart IT Asset & Ticket Management System |
+    Developed by Areej |
+    All Rights Reserved.
+
+</footer>
+<script src="JS/tickets.js"></script>
+
+</body>
+</html>

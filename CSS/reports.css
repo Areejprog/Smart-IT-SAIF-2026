@@ -1,0 +1,62 @@
+.report-stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    margin-bottom:35px;
+}
+
+.report-card{
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    box-shadow:0 8px 20px rgba(0,0,0,.06);
+}
+
+.report-card h3{
+    color:#64748b;
+}
+
+.report-card p{
+    font-size:38px;
+    color:#2563eb;
+    font-weight:700;
+    margin-top:15px;
+}
+
+/* ===== Charts ===== */
+
+.chart-card{
+    background:white;
+    padding:30px;
+    border-radius:22px;
+    margin-top:35px;
+    box-shadow:0 8px 20px rgba(0,0,0,.06);
+}
+
+.chart-container{
+    width:100%;
+    max-width:700px;
+    height:350px;
+    margin:auto;
+    position:relative;
+}
+
+.chart-container canvas{
+    width:100% !important;
+    height:350px !important;
+}
+.footer{
+
+    margin-top:40px;
+
+    padding:20px;
+
+    text-align:center;
+
+    color:#666;
+
+    font-size:14px;
+
+    border-top:1px solid #ddd;
+
+}
