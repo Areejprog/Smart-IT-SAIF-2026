@@ -1,0 +1,50 @@
+.form-card,
+.table-card{
+    background:white;
+    padding:30px;
+    border-radius:22px;
+    margin-bottom:30px;
+    box-shadow:0 8px 20px rgba(0,0,0,.06);
+}
+
+.form-row{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr auto;
+    gap:15px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th{
+    background:#f8fafc;
+}
+
+th,
+td{
+    padding:18px;
+    text-align:left;
+    border-bottom:1px solid #edf2f7;
+}
+
+tr:hover{
+    background:#f8fafc;
+}
+
+.footer{
+
+    margin-top:40px;
+
+    padding:20px;
+
+    text-align:center;
+
+    color:#666;
+
+    font-size:14px;
+
+    border-top:1px solid #ddd;
+
+}

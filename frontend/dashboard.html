@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/dashboard.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<div class="layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div>
+
+            <img src="Images/Logo.png" class="logo">
+
+            <h2 class="logo-text">Smart IT</h2>
+
+            <nav>
+
+                <a href="home.html" class="active">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+
+                <a href="assets.html">
+                    <i class="fa-solid fa-computer"></i>
+                    Assets
+                </a>
+
+                <a href="tickets.html">
+                    <i class="fa-solid fa-ticket"></i>
+                    Tickets
+                </a>
+
+                <a href="reports.html">
+                    <i class="fa-solid fa-chart-column"></i>
+                    Reports
+                </a>
+
+            </nav>
+
+        </div>
+
+        <a href="index.html" class="logout-btn">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Logout
+        </a>
+
+    </aside>
+
+
+    <main class="main-content">
+
+        <h1>Dashboard</h1>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Total Assets</h3>
+                <span id="totalAssets">0</span>
+            </div>
+
+            <div class="card">
+                <h3>Open Tickets</h3>
+                <span id="openTickets">0</span>
+            </div>
+
+            <div class="card">
+                <h3>Closed Tickets</h3>
+                <span id="closedTickets">0</span>
+            </div>
+
+            <div class="card">
+                <h3>Maintenance Assets</h3>
+                <span id="maintenanceAssets">0</span>
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<footer class="footer">
+
+    © 2026 Smart IT Asset & Ticket Management System |
+    Developed by Areej |
+    All Rights Reserved.
+
+</footer>
+
+<script src="JS/dashboard.js"></script>
+
+</body>
+</html>
